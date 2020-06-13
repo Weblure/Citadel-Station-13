@@ -657,8 +657,9 @@ BODY_SIZE_MAX 1
 THRESHOLD_BODY_SIZE_SLOWDOWN 0.85
 
 ## Multiplier used in the smaller strides slowdown calculation.
+## This is a linear function that smoothly intensifies as the player size decreases below the above threshold.
 ## Doesn't apply to floating or crawling mobs.
-BODY_SIZE_SLOWDOWN_MULTIPLIER 0.25
+BODY_SIZE_SLOWDOWN_MULTIPLIER 3
 
 ## Allows players to set a hexadecimal color of their choice as skin tone, on top of the standard ones.
 ALLOW_CUSTOM_SKINTONES
